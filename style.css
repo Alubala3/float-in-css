@@ -1,0 +1,48 @@
+*
+{
+    box-sizing: border-box;
+}
+
+html, body
+{
+    padding: 0;
+    margin: 0;
+}
+
+.row
+{
+    width: 800px;
+    margin: 0 auto;
+}
+.row::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.row>div
+{
+    float: left;
+    /*color: #fff;*/
+    height: 500px;
+    padding: 10px;
+}
+
+.side-nav
+{
+    width: 30%;
+    background: #903c56;
+}
+
+.content
+{
+    width: 70%;
+    background: #173459;
+}
+
+@media only screen and (min-width: 480px) {
+    p{
+        font-size: 130%;
+    }
+}
